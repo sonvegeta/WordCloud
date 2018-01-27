@@ -27,9 +27,6 @@ public class WordCloudBuilder {
 		}
 		Configurations configurations = Configurations.builder().maxFontSize(50).minFontSize(10)
 				.wordCase(WordCase.ALL_CAPS).build();
-
-		System.out.println(buildWordCloud(words, configurations));
-		System.out.println(buildWordCloud(words, configurations).getNormalizedWords());
 	}
 
 	public static WordCloud buildWordCloud(List<Word> words, Configurations configurations) {
